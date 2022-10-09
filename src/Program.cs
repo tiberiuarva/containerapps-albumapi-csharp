@@ -40,8 +40,9 @@ app.Run();
 
 record Album(int Id, string Title, string Artist, double Price, string Image_url)
 {
-     public static List<Album> GetAll(){
+     public static List<Album> GetAll(){     
          var albums = new List<Album>(){
+            new Album(1, "Azure Night with Tiberiu & Milos", "Sytac Dev Hub", 0.00, "https://demodatastorage01.blob.core.windows.net/demo-data/sytac-logo.jfif"),
             new Album(1, "You, Me and an App Id", "Daprize", 10.99, "https://aka.ms/albums-daprlogo"),
             new Album(2, "Seven Revision Army", "The Blue-Green Stripes", 13.99, "https://aka.ms/albums-containerappslogo"),
             new Album(3, "Scale It Up", "KEDA Club", 13.99, "https://aka.ms/albums-kedalogo"),
